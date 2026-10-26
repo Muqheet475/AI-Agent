@@ -32,7 +32,7 @@ def call_function(tool_call, verbose: bool = False) -> dict:
             "content": f"Error: Unknown function: {function_name}",
         }
 
-    function_args["working_directory"]="./calculator"
+    function_args["working_directory"]="./workspace"
 
     result= function_map[function_name](**function_args)
 

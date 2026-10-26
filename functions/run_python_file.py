@@ -15,7 +15,7 @@ schema_run_python_file = {
                 },
                 "args": {
                     "type": "array",
-                    "items":"string",
+                    "items": {"type": "string"},
                     "description":"An optional parameter that defaults to None if no CLI arguments are provided otherwise executes the python file with the argument",
                 },
             },
